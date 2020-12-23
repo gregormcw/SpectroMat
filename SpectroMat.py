@@ -54,7 +54,7 @@ def spectrum(x, fs, buff_sz, win, pad_len=0):
 
     # For each frame:
     for i in range(len(xframes[0, :])):
-        # Window each frame individally, ignoring any zero-padding
+        # Window each frame individually, ignoring any zero-padding
         xframes[:buff_sz, i] *= w
 
         # Compute real-valued FFT, including any zero-padding
