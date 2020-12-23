@@ -34,7 +34,7 @@ def hoppy(x, frame_length=1024, hop_length=512):
 
 # Main function for assignment
 
-def spectrum(x, fs, buff_sz, win, pad_len=0):
+def spectro_mat(x, fs, buff_sz, win, pad_len=0):
     # Use helper function to create non-overlapping matrix if win == "rect"
     if win.lower() == "rect":
         xframes = hoppy(x, frame_length=buff_sz, hop_length=buff_sz)
